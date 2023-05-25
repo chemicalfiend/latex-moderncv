@@ -1,0 +1,175 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Pranay}
+\familyname{Venkatesh}
+%\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
+%\mobile{(omitted for web)}                    % optional, remove the line if not wanted
+\email{f20191004@pilani.bits-pilani.ac.in}                      % optional, remove the line if not wanted
+\homepage{chemicalfiend.github.io}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Research Interest}
+
+\cvline{}{I am interested in using theory and computational tools to model disordered materials and trying to develop the next generation of semiconductor optoelectronic devices.}
+
+\section{Education}
+\cventry{2019--2024}{M.Sc., Chemistry}{Birla Institute of Technology and Science}{Pilani, India}{}{}
+\cventry{2019--2024}{B.E., Chemical Engineering}{Birla Institute of Technology and Science}{Pilani, India}{}{}
+
+\section{Research Experience}
+
+\cventry{summer 2022}{Research Intern}{Computational Materials Engineering Lab, Boise State University}{Boise, Idaho}{}{
+    Mentor: Professor Eric Jankowski at the Micron School of Materials Science and Engineering, Boise State University at Idaho. 
+    \begin{itemize}
+        \item Analyzed Y6 and BTO materials and assessed their candidacy for organic photovoltaic applications.
+        \item Estimated the force-field parameters of the molecules using MP4 and TD-DFT methods in Gaussian09 as implemented in QUBEKit.
+        \item Determined the morphology and self-assembly of these materials using Molecular Dynamics (MD) simulations in HOOMD-Blue.
+        \item Evaluated the charge-carrier transport properties and electron mobilities using semi-empirical quantum chemical calculations and kinetic monte carlo simulations.
+        \item Presented a poster at ICUR '22 describing our workflow.
+    \end{itemize}
+}
+
+\cventry{2021--2023}{Undergraduate Research Assistant}{Birla Institute of Technology and Science}{Pilani, India}{}{
+    Mentor : Professor Sarbani Ghosh, Department of Chemical Engineering
+    \begin{itemize}
+        \item Worked on conducting polymer materials for optoelectronic and gas sensing applications.
+        \item Devised new simulation setups for studying morphology of polymeric systems under nano-confinement.
+        \item Obtained novel results regarding cylindrical nanoconfinement of PEDOT molecules by performing MD simulations in LAMMPS.
+        \item Analyzed the self-assembly patterns of various polymers by writing bespoke computational codes in Julia.
+    \end{itemize}
+}
+
+\cventry{summer 2021}{Summer Intern}{CSIR - Central Leather Research Institute}{Chennai, India}{}{
+Analyzed collagen molecules using X-Ray Crystallography and identified key components of its structural biology using the XRD data.
+Performed multiple sequence alignment studies on ClustalX to identify the patterns in protein sequences that are responsible for causing \emph{Osteogenesis imperfecta} in humans.
+}
+
+\section{Open Source Experience}
+
+\cventry{summer 2022}{Julia Season of Code Contributor}{JuliaMolSim - Molly.jl}{}{}{
+    \begin{itemize}
+        \item Implemented bond and angle constraint algorithms in the Molly.jl framework.
+        \item Coded in analysis features such as velocity autocorrelation.
+        \item Implemented various interatomic potentials and bonded interactions that help model various systems.
+    \end{itemize}
+}
+
+\section{Publications}
+
+\cvline{1}{Sukanya Das, \textbf{Pranay Venkatesh}, Sarbani Ghosh, K S Narayan. Ordered and Disordered Microstructures of Confined Conducting Polymers - Submitted to Soft Matter}
+
+\cvline{2}{\textbf{Pranay Venkatesh}, Eric Jankowski, Gwen White. Computational Challenges to Predicting Morphology of Large Macromolecule Blends, Poster at ICUR 2022}
+
+\section{Teaching Experience}
+
+\cventry{spring 2023}{Teaching Assistant}{Transport Phenomena}{}{}{
+    \begin{itemize}
+        \item Wrote comprehensive lecture notes for the course.
+        \item Demonstrated some transport problems and their numerical solutions using simulations.
+        \item Taught a session related to stream function and boundary layer theory in 2D flows.
+    \end{itemize}
+}
+
+
+\section{Projects}
+
+\cventry{fall 2022}{Molecular Dynamics Simulations of Liquids under Ultra-Confinement}{\break Study Project, Dept. of Chemistry}{BITS Pilani}{}{
+    Evaluated the properties of nano-scale evaporation of Argon at low temperatures in the presence of a solid with Molecular Dynamics (MD) simulations. Determined the Hamaker coefficient, a metric for "wettability" in an Argon-Platinum system for various geometries.
+}
+
+\cventry{fall 2022}{Smart Insoles for Shock Absorption}{Course Project, Introduction to MEMS}{BITS Pilani}{}{
+    Designed an insole with a smart electrorheological gel that works as a shock absorber in athlete's shoes, preventing damage and improving quality of sport. Modelled the gel and the effect of the shoe in COMSOL multiphysics.
+}
+
+
+\cventry{fall 2022}{Effective Models for Momentum Transport in Solid-Liquid Interfaces in MEMS Devices}{Course Project, Transport Phenomena}{BITS Pilani}{}{
+    Obtained velocity profiles for a fluid in a nano-channel under various models. Leveraged direct-simulation monte carlo (DSMC) simulations to determine how slip in a solid-fluid boundary plays a large impact in micro and nano-scale systems.
+}
+
+\cventry{fall 2022}{Forced Convection Cooling of Integrated Circuits}{Course Project, Transport Phenomena}{BITS Pilani}{}{
+    Demonstrated the harsh impact of IC heating on a PCB and designed a cooling solution that uses forced convection heat transfer using computational fluid dynamics (CFD) simulations in Ansys Icepak.  
+}
+
+\cventry{spring 2022}{Gallium Nitride Applications and Subsequent Improvements}{Course Project, Materials Science and Engineering}{BITS Pilani}{}{
+    \begin{itemize}
+        \item Reviewed the use of Gallium Nitride (GaN) in high-speed networks and power electronics. Interviewed prominent researchers in the field to understand the material processing and morphological features of its heterostructure.
+        \item Surveyed diode and transistor device performance with the use of Gallium Nitride composites with NbN and other materials.
+    \end{itemize}
+}
+
+\cventry{spring 2020}{Theoretical Investigation of Aggregation-Induced Emission (AIE) Molecules}{}{BITS Pilani}{}{
+    Performed TD-DFT calculations with various functionals to reproduce the absorption and emission spectra for a novel Near IR (NIR) emissive molecule.
+}
+
+\section{Technical Experience}
+\subsection{Extremely Proficient With}
+\cvline{languages}{Julia, Python}
+\cvline{technologies}{LAMMPS, HOOMD-Blue, \LaTeX{}, Bash Scripting, Git, Vim, Linux, Gnuplot}
+\subsection{Have Experience With}
+\cvline{languages}{Fortran-90, Java, Lua, C, MATLAB}
+\cvline{technologies}{VMD, NWChem, Gaussian09, ANSYS Icepak, COMSOL, CUDA, Slurm}
+
+\section{Conferences and Workshops}
+
+\cvline{summer 2022}{JuliaCon 2022}
+
+\cvline{summer 2022}{Idaho Conference on Undergraduate Research}
+
+\cvline{summer 2021}{JuliaCon 2021}
+
+
+\section{Relevant Coursework}
+\cvline{core courses}{Materials Science and Engineering, Numerical Methods for Chemical Engineers, Physical Chemistry 2 (Quantum Mechanics), Physical Chemistry 3 (Group Theory and Many-electron Theory), Physical Chemistry 4 (Statistical Mechanics and Theories of Reaction Rates)}
+\cvline{electives}{Electronic Correlation in Atoms and Molecules, Statistical Thermodynamics, Introduction to MEMS, Chemistry of Materials, Transport Phenomena, Quantum Information and Computing}
+\cvline{online courses}{Introduction to Tensorflow, Improving Deep Neural Networks}
+
+
+\section{Extracurriculars and Hobbies}
+
+\cventry{}{BITS-ACM (Association of Computing Machinery)}{}{}{}{
+    Promoted and motivated an understanding of scientific computing within the club. Wrote articles on simple machine learning and game development in python for the BITS-ACM blog.}
+
+\cventry{}{The Eastern Outlook}{}{}{}{
+    Eastern culture and anime club within the institute. Helped conduct events, games, discussions and expositions related to Japanese, Chinese and Korean art forms.}
+
+\cventry{}{Other Hobbies}{}{}{}{
+    Carnatic violin; Cricket; Philosophy; Electronics, operating systems and embedded software}
+
+\end{document}
