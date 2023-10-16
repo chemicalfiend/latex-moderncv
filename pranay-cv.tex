@@ -23,8 +23,10 @@
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
-
 % personal data
+%\firstname{\Large{Pranay}}
+%\familyname{Venkatesh \\ Curriculum Vitae \\ PhD Chemistry \\ (UM ID : 95978225)}
+
 \firstname{Pranay}
 \familyname{Venkatesh}
 %\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
@@ -45,48 +47,56 @@
 \begin{document}
 \maketitle
 
-\section{Research Interest}
-
-\cvline{}{I am interested in using theoretical and computational chemical physics tools to model disordered materials and developing the next generation of semiconductor optoelectronic devices.}
-
 \section{Education}
 \cventry{2019--2024}{M.Sc., Chemistry}{Birla Institute of Technology and Science}{Pilani, India}{}{}
 \cventry{2019--2024}{B.E., Chemical Engineering}{Birla Institute of Technology and Science}{Pilani, India}{}{}
 
 \section{Research Experience}
 
-\cventry{2023--2024}{Visiting Research Student}{Frost Group, Imperial College London}{London, England}{}{
-    Mentor: Professor Jarvist Moore Frost at Department of Chemistry, Imperial College London.
+\cventry{2023--2024}{Imperial College London}{Dept of Chemistry}{London, England}{}{
+    Mentor: Dr. Jarvist Moore Frost at Department of Chemistry, Imperial College London.
     \begin{itemize}
-        \item Developed Non-Adiabatic dynamics methods for semiconductor materials to simulate the time-dependent electronic structure of materials under photoexcitation.
+        \item Worked on using Path Integral Quantum Dynamics methods to understand the time-dependent electronic structure of materials under photoexcitation.
+        \item Developed workflows for applying these methods to simulate polarons in organic materials.
     \end{itemize}
 }
 
-\cventry{summer 2022}{Research Intern}{Computational Materials Engineering Lab, Boise State University}{Boise, Idaho}{}{
+\cventry{summer 2022}{CME Lab, Boise State University}{Micron School of MSE}{Boise, Idaho}{}{
     Mentor: Professor Eric Jankowski at the Micron School of Materials Science and Engineering, Boise State University at Idaho. 
     \begin{itemize}
-        \item Analyzed Y6 and BTO materials and assessed their candidacy for organic photovoltaic applications.
+        \item Analyzed Y6 and BTO materials and assessed their candidacy for organic photovoltaics.
         \item Estimated the force-field parameters of the molecules using MP4 and TD-DFT methods in Gaussian09 as implemented in QUBEKit.
         \item Determined the morphology and self-assembly of these materials using Molecular Dynamics (MD) simulations in HOOMD-Blue.
-        \item Evaluated the charge-carrier transport properties and electron mobilities using semi-empirical quantum chemical calculations and kinetic monte carlo simulations.
+        \item Evaluated the charge-carrier mobilities using semi-empirical quantum chemical calculations and kinetic monte carlo simulations.
         \item Presented a poster at ICUR '22 describing our workflow.
     \end{itemize}
 }
 
-\cventry{2021--2023}{Undergraduate Research Assistant}{Birla Institute of Technology and Science}{Pilani, India}{}{
+\cventry{2021--2023}{Computational Materials Design and Simulation Lab}{BITS Pilani}{Rajasthan, India}{}{
     Mentor : Professor Sarbani Ghosh, Department of Chemical Engineering
     \begin{itemize}
-        \item Worked on conducting polymer materials for optoelectronic and gas sensing applications.
-        \item Devised new simulation setups for studying morphology of polymeric systems under nano-confinement.
+        \item Worked on conducting polymer materials for optoelectronics and gas sensing applications.
+        \item Devised new simulation setups for studying morphology of nano-confined polymeric systems.
         \item Obtained novel results regarding cylindrical nanoconfinement of PEDOT molecules by performing MD simulations in LAMMPS.
-        \item Analyzed the self-assembly patterns of various polymers by writing bespoke computational codes in Julia.
+        \item Analyzed the self-assembly patterns of various polymers by writing bespoke computational codes.
+        \item Developed a scheme for inferring the charge carrier mobilities of various MD morphologies from
+LAMMPS using Marcus Hopping Rate Theory and Kinetic Monte Carlo simulations.
     \end{itemize}
 }
 
-\cventry{summer 2021}{Summer Intern}{CSIR - Central Leather Research Institute}{Chennai, India}{}{
+\cventry{summer 2021}{Central Leather Research Institute}{CSIR-CLRI}{Chennai, India}{}{
 Analyzed collagen molecules using X-Ray Crystallography and identified key components of its structural biology using the XRD data.
 Performed multiple sequence alignment studies on ClustalX to identify the patterns in protein sequences that are responsible for causing \emph{Osteogenesis imperfecta} in humans.
 }
+
+
+\section{Publications}
+
+\cvline{1}{Sukanya Das, \textbf{Pranay Venkatesh}, Sarbani Ghosh, K S Narayan. Ordered and Disordered Microstructures of Nanoconfined Conducting Polymers, RSC Soft Matter 2023 doi : \href{https://doi.org/10.1039/D3SM00379E}{10.1039/D3SM00379E}}
+
+\cvline{2}{\textbf{Pranay Venkatesh}, Eric Jankowski, Gwen White. Computational Challenges to Predicting Morphology of Large Macromolecule Blends, Poster at ICUR 2022}
+
+\pagebreak
 
 \section{Open Source Experience}
 
@@ -94,19 +104,16 @@ Performed multiple sequence alignment studies on ClustalX to identify the patter
     \begin{itemize}
         \item Implemented bond and angle constraint algorithms in the Molly.jl framework.
         \item Coded in analysis features such as velocity autocorrelation.
-        \item Implemented various interatomic potentials and bonded interactions that help model various systems.
+        \item Implemented various interatomic potentials and bonded interactions for chemical systems.
+        \item Presented my work at JuliaCon 2022.
     \end{itemize}
 }
 
-\section{Publications}
 
-\cvline{1}{Sukanya Das, \textbf{Pranay Venkatesh}, Sarbani Ghosh, K S Narayan. Ordered and Disordered Microstructures of Nanoconfined Conducting Polymers, RSC Soft Matter 2023}
-
-\cvline{2}{\textbf{Pranay Venkatesh}, Eric Jankowski, Gwen White. Computational Challenges to Predicting Morphology of Large Macromolecule Blends, Poster at ICUR 2022}
 
 \section{Teaching Experience}
 
-\cventry{spring 2023}{Teaching Assistant}{Transport Phenomena}{}{}{
+\cventry{spring 2023}{Transport Phenomena}{Course Teaching Assistant}{BITS Pilani}{}{
     \begin{itemize}
         \item Wrote comprehensive lecture notes for the course.
         \item Demonstrated some transport problems and their numerical solutions using simulations.
@@ -120,30 +127,33 @@ Performed multiple sequence alignment studies on ClustalX to identify the patter
     \end{itemize}
 }
 
-\cventry{April 2020}{Online High School Chemistry Classses}{NPS International, Chennai}{}{}{
-    \begin{itemize}
-        \item Taught online video classes on solution chemistry for Grade 12 during COVID in NPS International Chennai
-    \end{itemize}
-}
+ \cventry{April 2020}{Online High School Chemistry Classses}{NPS International, Chennai}{}{}{
+     \begin{itemize}
+         \item Taught online video classes on solution chemistry for Grade 12 during COVID at NPS International.
+     \end{itemize}
+ }
 
 
 \section{Projects}
 
 \cventry{fall 2022}{Molecular Dynamics Simulations of Liquids under Ultra-Confinement}{\break Study Project, Dept. of Chemistry}{BITS Pilani}{}{
-    Evaluated the properties of nano-scale evaporation of Argon at low temperatures in the presence of a solid with Molecular Dynamics (MD) simulations. Determined the Hamaker coefficient, a metric for "wettability" in an Argon-Platinum system for various geometries.
+    \begin{itemize}
+        \item Evaluated the properties of nano-scale evaporation of Argon at low temperatures in the presence of a solid with Molecular Dynamics (MD) simulations.
+        \item Determined the Hamaker coefficient, a metric for "wettability" in an Argon-Platinum system for various geometries.
+    \end{itemize}
 }
 
-\cventry{fall 2022}{Smart Insoles for Shock Absorption}{Course Project, Introduction to MEMS}{BITS Pilani}{}{
+\cventry{fall 2022}{Smart Insoles for Shock Absorption}{Course Project, Intro to MEMS}{BITS Pilani}{}{
     Designed an insole with a smart electrorheological gel that works as a shock absorber in athlete's shoes, preventing damage and improving quality of sport. Modelled the gel and the effect of the shoe in COMSOL multiphysics.
 }
 
 
-\cventry{fall 2022}{Effective Models for Momentum Transport in Solid-Liquid Interfaces in MEMS Devices}{Course Project, Transport Phenomena}{BITS Pilani}{}{
+\cventry{fall 2022}{Effective Models for Momentum Transport in Solid-Liquid Interfaces in MEMS Devices}{Transport Phenomena}{BITS Pilani}{}{
     Obtained velocity profiles for a fluid in a nano-channel under various models. Leveraged direct-simulation monte carlo (DSMC) simulations to determine how slip in a solid-fluid boundary plays a large impact in micro and nano-scale systems.
 }
 
-\cventry{fall 2022}{Forced Convection Cooling of Integrated Circuits}{Course Project, Transport Phenomena}{BITS Pilani}{}{
-    Demonstrated the harsh impact of IC heating on a PCB and designed a cooling solution that uses forced convection heat transfer using computational fluid dynamics (CFD) simulations in Ansys Icepak.  
+\cventry{fall 2022}{Forced Convection Cooling of Integrated Circuits}{Transport Phenomena}{BITS Pilani}{}{
+     Demonstrated the impact of IC heating on a PCB and designed a forced convection heat transfer cooling solution using computational fluid dynamics (CFD) simulations in Ansys Icepak 
 }
 
 \cventry{spring 2022}{Gallium Nitride Applications and Subsequent Improvements}{Course Project, Materials Science and Engineering}{BITS Pilani}{}{
@@ -153,9 +163,11 @@ Performed multiple sequence alignment studies on ClustalX to identify the patter
     \end{itemize}
 }
 
-\cventry{spring 2020}{Theoretical Investigation of Aggregation-Induced Emission (AIE) Molecules}{}{BITS Pilani}{}{
+\cventry{spring 2020}{Investigation of Aggregation-Induced Emission (AIE) Molecules}{}{BITS Pilani}{}{
     Performed TD-DFT calculations with various functionals to reproduce the absorption and emission spectra for a novel Near IR (NIR) emissive molecule.
 }
+
+\pagebreak
 
 \section{Technical Skills}
 \subsection{Extremely Proficient With}
@@ -189,6 +201,6 @@ Performed multiple sequence alignment studies on ClustalX to identify the patter
     Eastern culture and anime club within the institute. Helped conduct events, games, discussions and expositions related to Japanese, Chinese and Korean art forms.}
 
 \cventry{}{Other Hobbies}{}{}{}{
-    Carnatic violin; Cricket; Philosophy; Electronics, operating systems and embedded software}
+    Cricket; Philosophy; Cryptic Crossword; DIY Electronics}
 
 \end{document}
